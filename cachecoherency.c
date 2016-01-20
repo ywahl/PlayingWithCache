@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
     return -1;
   }
   printf("Level 1 Data cache line size=%d\n", cache_line_sz);
-  posix_memalign(&array, cache_line_sz, MEM_SIZE);
+  posix_memalign((void *)&array, cache_line_sz, MEM_SIZE);
   int num_iter = atoi(argv[1]);
   int rd_offset = atoi(argv[2]);
   int wr_offset = atoi(argv[3]);

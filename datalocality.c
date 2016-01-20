@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define size (1 << 10)
+#define size (1 << 12)
 int arr[size][size];
 
 
