@@ -20,7 +20,7 @@ void loop_remote()
   int i, j;
   for (i = 0; i < size; i++) {
     for (j = 0; j < size; j++)
-      arr[i][j] = 5;
+      arr[j][i] = 5;
   }  
 }
 
